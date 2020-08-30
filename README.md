@@ -1,11 +1,11 @@
 # weather-dashboard
 
 ## Link
-Link to live site: [Code Quiz]()
+Link to live site: [weather-dashboard](https://reddphoenix.github.io/weather-dashboard/)
 
 ## Screenshot of live website
 
-![Website Screenshot]()
+![Website Screenshot](https://raw.githubusercontent.com/ReddPhoenix/weather-dashboard/master/assets/live-app.png)
 
 ## Project Overview
 
@@ -21,6 +21,7 @@ Weather dashboard providing current weather conditions and a five day forecast. 
 
 * Mason Short (LocalStorage)
 * Chris Sanners (Recall Local Storage & jQuery appending)
+* https://api.openweathermap.org/
 * https://w3docs.com
 * https://w3schools.com
 * https://developer.mozilla.org
