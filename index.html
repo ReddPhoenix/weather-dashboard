@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- Remove Bulma, couldn't get columns to display properly-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Weather Dashboard</title>
+</head>
+
+<body style="background-image: url(./assets/pawel-czerwinski-9Lw6YZjRmlk-unsplash.jpg" )>
+  <header id=header class="jumbotron" style="background-image: url(./assets/black-texture.jpg" )>
+    <h1 class="display-3">Weather Dashboard</h1>
+    <p class="lead">The right way to plan for wherever you're going!</p>
+
+    <!-- Use jQuery in place of code-->
+    <!-- Moment JS applied to currentDay -->
+
+    <!-- Weather API produces data based on user input -->
+    <!-- <div class="weather">
+        <div class="input">
+          <input type="text" class="inputValue" placeholder="Enter a city for weather">
+          <input type="submit" value="Submit" class="button">
+        </div>
+        
+        <div class="display">
+          <p id="currentDay" class="lead"></p>
+          <p class="name"></p>
+          <p class="temp"></p>
+          <p class="desc"></p>
+          <p class="humid"></p>
+          <p class="wind"></p>
+          <p class="uv"></p>
+
+        </div>
+      </div> -->
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card-top text-center text-white bg-dark mb-3">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">Enter a city for weather:</div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10">
+        <!-- Enter city to search and submit button-->
+        <!-- Remember to stop button submit function to prevent reload-->
+        <input type="text" id="city-input">
+        <button class="btn btn-large btn-secondary" id="search-button" type="submit" value="Search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="col-lg-2"></div>
+
+    <br>
+
+    <div class="row">
+      <!-- Saved cities -->
+      <div class="col-lg-2">
+
+
+        <div class="card" style="border: solid">
+          <div class="city-card" id="searched-city">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-2"></div>
+
+      <br>
+
+      <!-- Current Weather-->
+      <div class="col-lg-8" style="border: solid grey">
+        <div class="city-and-date">
+
+          <p class="city"></p>
+          <p class="today-date"></p>
+          <p class="condition-image"></p>
+        </div>
+
+        <br><br>
+
+        <div class="weather-info"></div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <br><br>
+
+      <!-- Five Day Weather-->
+      <div class="col-lg-12">
+        <h2 id="five-days"></h2>
+      </div>
+    </div>
+    <div class="row forecastCards" style="border: solid grey">
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
